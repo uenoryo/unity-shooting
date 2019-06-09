@@ -270,6 +270,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1116734203, guid: 3ed21babe237e4d46938470656b86b30, type: 3}
+      propertyPath: shotDelay
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1116734205, guid: 3ed21babe237e4d46938470656b86b30, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
       value: 0.36881208
