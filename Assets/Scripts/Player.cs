@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed = 5;
+    Spaceship spaceship;
 
     public GameObject bullet;
 
     // Startメソッドをコルーチンとして呼び出す
     IEnumerator Start ()
     {
-        while (true) {
-            Instantiate (bullet, transform.position, transform.rotation);
+        this.spaceship = GetComponent<Spaceship> ();
 
-            yield return new WaitForSeconds (0.05f);
+        while (true) {
+            this.spaceship.Shot (transform);
+
+            yield return new WaitForSeconds (this.spaceship.shotDelay);
         }
     }
 
@@ -25,6 +27,6 @@ public class Player : MonoBehaviour
         float y = Input.GetAxisRaw ("Vertical");
 
         Vector2 direction = new Vector2 (x, y).normalized;
-        GetComponent<Rigidbody2D>().velocity = direction * speed;
+        this.spaceship.Move (direction);
     }
 }
