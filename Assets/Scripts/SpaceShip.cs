@@ -9,6 +9,8 @@ public class Spaceship : MonoBehaviour
 
     public float shotDelay;
 
+    public bool canShot;
+
     public GameObject bullet;
 
     public void Shot (Transform origin)

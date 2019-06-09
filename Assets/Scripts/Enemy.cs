@@ -13,6 +13,10 @@ public class Enemy : MonoBehaviour
 
         spaceship.Move (transform.up * -1);
 
+        if (spaceship.canShot == false) {
+            yield break;
+        }
+
         while (true) {
 
             // 子要素を全て取得する
