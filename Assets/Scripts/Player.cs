@@ -29,4 +29,13 @@ public class Player : MonoBehaviour
         Vector2 direction = new Vector2 (x, y).normalized;
         this.spaceship.Move (direction);
     }
+
+    void OnTriggerEnter2D (Collider2D c)
+    {
+        Destroy(c.gameObject);
+
+        spaceship.Explosion();
+
+        Destroy (gameObject);
+    }
 }

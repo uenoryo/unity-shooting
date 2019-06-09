@@ -13,6 +13,14 @@ public class Spaceship : MonoBehaviour
 
     public GameObject bullet;
 
+    public GameObject explosion;
+
+    public void Explosion ()
+    {
+        Instantiate (explosion, transform.position, transform.rotation);
+    }
+
+
     public void Shot (Transform origin)
     {
         Instantiate (bullet, origin.position, origin.rotation);
