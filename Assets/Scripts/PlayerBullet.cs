@@ -6,9 +6,13 @@ public class PlayerBullet : MonoBehaviour
 {
     public float speed = 10;
 
-    // Update ...
-    void Update()
+    public float lifeTime = 5;
+
+    // Start ...
+    void Start()
     {
         GetComponent<Rigidbody2D>().velocity = transform.up.normalized * speed;
+
+        Destroy (gameObject, lifeTime);
     }
 }
