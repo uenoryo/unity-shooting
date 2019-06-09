@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 850937378}
   - component: {fileID: 850937383}
   - component: {fileID: 3699402297621898623}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,6 +154,8 @@ MonoBehaviour:
   shotDelay: 0.05
   canShot: 0
   bullet: {fileID: 8737731699382297719, guid: 2e02ab34771ea48f3b36bb1c396f6d4f, type: 3}
+  explosion: {fileID: 4373805783526254648, guid: 098e1bcc651024ff8a5fe938282c1878,
+    type: 3}
 --- !u!61 &3699402297621898623
 BoxCollider2D:
   m_ObjectHideFlags: 0

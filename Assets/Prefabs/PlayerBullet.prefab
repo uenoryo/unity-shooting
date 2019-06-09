@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8737731698857406281}
   - component: {fileID: 8737731698857406294}
   - component: {fileID: 6725737659590465195}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 8737731699382297714}
   - component: {fileID: 8737731699382297717}
   - component: {fileID: 8737731699382297716}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 8737731700501755416}
   - component: {fileID: 8737731700501755417}
   - component: {fileID: 4735663093854957133}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
